@@ -1,0 +1,7 @@
+Pergunta: Quais outras diferenças existem entre Testes Funcionais e Testes de Unidade? Escreva duas diferenças simples.
+
+Resposta: Uma diferença entre o Teste Funcional e o Teste de Unidade é que os primeiros pode envolver diversas unidades do sistema, já que testa uma funcionalidade, enquanto o segundo deve envolver apenas uma unidade. 
+
+Outra diferença é que o Teste Funcional utiliza a técnica de caixa preta, conhecendo apenas as interfaces do sistema sob teste, ou seja, ele não conhece o código e estrutura do sistema. Já o Teste de Unidade pode utilizar tanto a técnica de caixa preta quanto a técnica de caixa branca, que conhece a estrutura e o código do sistema.
+
+
