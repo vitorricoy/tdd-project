@@ -1,0 +1,8 @@
+Pergunta: Descreva brevemente o processo apresentado na figura.
+
+Resposta: O processo do TDD apresentado na figura consiste nos seguintes passos: primeiramente, é escrito um teste funcional para a funcionalidade que será implementada. Esse teste funcional deve ser escrito pelo ponto de vista do usuário, ou seja, deve simular o uso do sistema por um usuário. Caso o teste funcional falhe, é escrito um teste de unidade para testar a unidade que implementa a funcionalidade que fará o teste funcional passar. 
+
+Após escrever o teste de unidade, é escrito o código mínimo da aplicação que faz passar o teste de unidade. Também é verificada a necessidade de refatorações, e caso essa necessidade exista, a refatoração é feita e os testes de unidade são executados novamente para garantir que nada foi quebrado pela refatoração. Após isso, caso o teste funcional não passe com esse código mínimo desenvolvido, é escrito outro teste de unidade e esse ciclo de escrever um teste de unidade e o código mínimo para que ele passe é reiniciado.
+
+Uma vez que o teste funcional e os testes unitários estão passando, verifica-se novamente a necessidade de alguma refatoração e, caso precise, a refatoração é executada e os testes unitários e funcionais são executados para verificar se algum erro foi introduzido pela refatoração. Após esses passos, o ciclo é reiniciado para uma nova funcionalidade, já que temos os testes funcionais e os testes unitários passando, sem necessidade de refatoração.
+
