@@ -25,9 +25,7 @@ class NewVisitorTest(FunctionalTest):
         # "1: Estudar testes funcionais" como um item da lista TODO
         inputbox.send_keys(Keys.ENTER)
         
-        table = self.browser.find_element_by_id('id_list_table')
-        rows = table.find_elements_by_tag_name('tr')  
-        self.assertIn('1: Estudar testes funcionais', [row.text for row in rows])
+        self.wait_for_row_in_list_table ('1: Estudar testes funcionais')
         
         # Ainda existe uma caixa de texto convidando para adicionar outro item
         # Ela digita: "Estudar testes de unidade"
